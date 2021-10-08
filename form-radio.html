@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form radio button</title>
+</head>
+<body>
+    <form>
+        <div>
+            <h2>Inputs de seleccion</h2>
+            <!--
+                radio: permite seleccionar un elemento de una lista de opciones
+                checkbox: permite seleccionar varias opciones de una lista seleccionada
+                select: crea una lista de opciones donde podemos selecionar
+                una o varias opciones
+                cada opcion ira dentro de una etiqueta <option></option>
+
+                Si tenemos muchas opciones podemos ordenarlas por categorias
+                a travez de la etiqueta <optgroup> con el atributo label para
+                nombrar la categoria
+            -->
+            <label>
+                Masculino
+                <input type="radio" name="sexo" value="masculino" checked>
+            </label>
+            <label>
+                Femenino
+                <input type="radio" name="sexo" value="femenino">
+            </label>
+            <label>
+                Vaca
+                <input type="radio" name="sexo" value="otro">
+            </label>
+            
+
+
+        </div>
+    </form>
+</body>
+</html>

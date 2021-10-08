@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<!--
+    La estructura basica del formulario se compone por 4 elementos:
+    form -> es la etiqueta que engloba al formulario
+    label -> Sirve para escribir el nombre del campo a rellenar
+    input -> Sirve para crear un campo que permita al usuario
+    interactuar
+    button -> crea un boton que permitira enviar el formulario
+-->
+
+<!--   
+    Tipos de input:
+    button -> se comporta igual que <button>
+    color -> se utiliza para especificar un color
+    date -> se utiliza para introducir una fecha
+    datetime -> Obsoleto
+    datetime-local -> Fecha y hora, no funciona en firefox
+    email -> se utiliza para introducir un email
+    hidden -> Campo oculto, puede contener un valor pero no se muestra
+    month -> se utiliza para introducir un mes
+    number -> se utiliza para valores numericos
+    password -> se utiliza para contraseñas
+    range -> se utiliza para establecer un rango
+    reset -> se utiliza para reiniciar el formulario
+    search -> se utiliza para las barras de busqueda
+    submit -> Se utiliza para enviar el formulario
+    tel -> Se utiliza para introducir numeros telefonicos
+    text -> valor por defecto, es una caja de texto
+    time -> Se utiliza para introducir una hora
+    url -> Se utiliza para introducir URLS
+    week -> Se utiliza para introducir el numero de semana del año
+
+-->
+<body>
+    <form action="">
+        <h1>Tipos de inputs</h1>
+
+        <div>
+            <h2>Botones</h2>
+            <label for="name">Nombre</label>
+        <input id="name">
+        <!-- el <button> enviar la info del formulario-->
+        <button>Enviar Formulario</button>
+        <!-- el input button no envia la info del formulario -->
+        <!-- sirve para hacer operaciones en el momento-->
+        <input type="button" value="Enviar type button">
+        <!-- para enviar el formulario el type tiene que ser submit-->
+        <input type="submit" value="Enviar type submit">
+        </div>
+        
+        <div>
+            <h2>Fechas</h2>
+            <input type="date">
+            <input type="datetime-local">
+            <input type="date">
+            <input type="time">
+            <input type="month">
+            <input type="week">
+        </div>
+
+        <div>
+            <h2>Para moviles</h2>
+            <div>
+                <label>Search
+                    <input type="search">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Telephone
+                    <input type="tel">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Email
+                    <input type="email">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Password
+                    <input type="password">
+                </label>
+            </div>
+            <div>
+                <label>
+                    urls
+                    <input type="url">
+                </label>
+            </div>
+        </div>
+        <div>
+            <h2>No tienen ninguna categoria</h2>
+            <input type="color">
+            <input type="number">
+            <input type="range" step="10" min="0" max="50">
+            <input type="reset">
+            <input type="text">
+        </div>        
+    </form>
+</body>
+</html>
